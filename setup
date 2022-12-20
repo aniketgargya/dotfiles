@@ -1,0 +1,11 @@
+if [ -z $1 ] ; then
+  echo "Usage: ./setup ~/profile_file" && exit 1;
+fi
+
+git submodule init
+git submodule update
+
+echo "source ~/.extrarc" >> $1
+
+./run
+
