@@ -1,0 +1,3 @@
+cp dotbot/tools/git-submodule/install .
+./install
+

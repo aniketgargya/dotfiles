@@ -1,0 +1,8 @@
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+    - [set -o vi]
+
+- link:
+    ~/.tmux.conf: tmux.conf
+    ~/.vimrc: vimrc
+
