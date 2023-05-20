@@ -5,4 +5,5 @@
     ~/.tmux.conf: tmux.conf
     ~/.vimrc: vimrc
     ~/.extrarc: extrarc
+    ~/.config/nvim: nvim
 
