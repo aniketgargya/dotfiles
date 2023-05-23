@@ -2,6 +2,3 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
-[submodule "nvim/pack/packer/start/packer.nvim"]
-	path = nvim/pack/packer/start/packer.nvim
-	url = https://github.com/wbthomason/packer.nvim

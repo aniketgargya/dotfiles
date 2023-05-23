@@ -1,4 +1,8 @@
-require('packer').startup(function(use)
+require 'user.options'
+require 'user.plugins'
 
-end)
+-- require('nvim-tree').setup({})
+-- vim.api.nvim_set_keymap('n', '<Leader>e', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
+
+-- vim.cmd('colorscheme moonfly')
 
