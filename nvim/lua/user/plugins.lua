@@ -50,6 +50,8 @@ return packer.startup(function(use)
 
     use { "lewis6991/gitsigns.nvim" }
 
+    use { "nvim-lualine/lualine.nvim" }
+
 
     if PACKER_BOOTSTRAP then
 		require("packer").sync()
