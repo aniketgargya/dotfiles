@@ -36,7 +36,10 @@ packer.init({
 
 return packer.startup(function(use)
     use { "wbthomason/packer.nvim" }
+
     use { "bluz71/vim-moonfly-colors", as = "moonfly" }
+    use { "navarasu/onedark.nvim", as = "onedark" }
+    use { "rebelot/kanagawa.nvim" }
 
     use { "nvim-telescope/telescope.nvim", requires = { "nvim-lua/plenary.nvim" } }
 
