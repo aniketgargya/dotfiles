@@ -1,8 +1,9 @@
-require 'user.options'
-require 'user.plugins'
-
--- require('nvim-tree').setup({})
--- vim.api.nvim_set_keymap('n', '<Leader>e', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
-
--- vim.cmd('colorscheme moonfly')
+require "user.options"
+require "user.keymaps"
+require "user.plugins"
+require "user.colorscheme"
+require "user.telescope"
+require "user.treesitter"
+require "user.nvim-tree"
+require "user.bufferline"
 
