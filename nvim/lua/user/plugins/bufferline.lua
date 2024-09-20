@@ -23,6 +23,6 @@ return {
         keymap.set("n", "<leader>bn", "<cmd>BufferLineCycleNext<CR>", { desc = "Go to next buffer" })
         keymap.set("n", "H", "<cmd>BufferLineCyclePrev<CR>", { desc = "Go to previous buffer" })
         keymap.set("n", "L", "<cmd>BufferLineCycleNext<CR>", { desc = "Go to next buffer" })
-    end
+    end,
 }
 
