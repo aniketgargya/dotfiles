@@ -26,6 +26,7 @@ return {
 
         dashboard.section.buttons.val = {
             dashboard.button("p", "Find file", ":Telescope find_files <CR>"),
+            dashboard.button("l", "Leetcode", ":Leet<CR>"),
             dashboard.button("q", "Quit Neovim", ":qa<CR>"),
         }
 
