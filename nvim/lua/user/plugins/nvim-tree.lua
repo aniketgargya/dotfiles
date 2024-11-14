@@ -1,8 +1,9 @@
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
-
 return {
     "nvim-tree/nvim-tree.lua",
+    init = function()
+        vim.g.loaded_netrw = 1
+        vim.g.loaded_netrwPlugin = 1
+    end,
     opts = {
         view = {
             width = 35,
@@ -41,6 +42,6 @@ return {
         { "<leader>ef", "<cmd>NvimTreeFocus<CR>", { desc = "Focus on file explorer" } },
         { "<leader>ec", "<cmd>NvimTreeCollapse<CR>", { desc = "Collapse file explorer" } },
         { "<leader>er", "<cmd>NvimTreeRefresh<CR>", { desc = "Refresh file explorer" } },
-    }
+    },
 }
 
