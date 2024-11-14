@@ -12,5 +12,8 @@ opt.termguicolors = true
 opt.background = "dark"
 opt.signcolumn = "yes"
 
+opt.splitbelow = true
+opt.splitright = true
+
 opt.clipboard:append("unnamedplus")
 
