@@ -19,7 +19,7 @@ return {
     },
     keys = {
         { "<leader>bo", "<cmd>enew<CR>", desc = "Open new buffer" },
-        { "<leader>bx", "<cmd>bd<CR>", desc = "Close current buffer" },
+        { "<leader>bx", "<cmd>Bdelete<CR>", desc = "Close current buffer" },
         { "<leader>bp", "<cmd>BufferLineCyclePrev<CR>", desc = "Go to previous buffer" },
         { "<leader>bn", "<cmd>BufferLineCycleNext<CR>", desc = "Go to next buffer" },
         { "H", "<cmd>BufferLineCyclePrev<CR>", desc = "Go to previous buffer" },
