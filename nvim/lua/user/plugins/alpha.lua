@@ -25,7 +25,7 @@ return {
             [[.JML.    YM .JMMmmmmMMM   `"bmmd"'      VF     .JMML.JML. `'  .JMML.]],
             [[                                                                    ]],
         }
-                                                                       
+
         dashboard.section.buttons.val = {
             dashboard.button("p", "Find file", ":Telescope find_files <CR>"),
             dashboard.button("l", "Leetcode", ":Leet<CR>"),
@@ -47,7 +47,7 @@ return {
             pattern = 'LazyVimStarted',
             once = true,
             callback = function()
-                local stats = require('lazy').stats()
+                local stats = require("lazy").stats()
                 local ms = math.floor(stats.startuptime * 100 + 0.5) / 100
 
                 local line1 = "Let's Write Some Bugs"
