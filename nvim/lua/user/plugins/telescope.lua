@@ -5,11 +5,10 @@ return {
         "nvim-lua/plenary.nvim",
         { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
     },
-    config = function()
+    opts = {},
+    config = function(_, opts)
         local telescope = require("telescope")
-
-        telescope.setup({})
-
+        telescope.setup(opts)
         telescope.load_extension("fzf")
     end,
     keys = {
