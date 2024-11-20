@@ -17,3 +17,4 @@ opt.splitright = true
 
 opt.clipboard:append("unnamedplus")
 
+opt.signcolumn = "yes:2"
