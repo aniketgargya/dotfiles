@@ -12,7 +12,6 @@ return {
         telescope.load_extension("fzf")
     end,
     keys = {
-        { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" },
         { "<leader>p", "<cmd>Telescope find_files<cr>", desc = "Fuzzy find files in cwd" },
         { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Fuzzy find files in cwd" },
         { "<leader>fr", "<cmd>Telescope oldfiles<cr>", desc = "Fuzzy find recent files" },
