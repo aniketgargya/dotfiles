@@ -43,8 +43,8 @@ return {
 
         vim.cmd("autocmd FileType alpha setlocal nofoldenable")
 
-        vim.api.nvim_create_autocmd('User', {
-            pattern = 'LazyVimStarted',
+        vim.api.nvim_create_autocmd("User", {
+            pattern = "LazyVimStarted",
             once = true,
             callback = function()
                 local stats = require("lazy").stats()
