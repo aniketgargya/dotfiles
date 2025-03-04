@@ -6,4 +6,5 @@
     ~/.vimrc: vimrc
     ~/.extrarc: extrarc
     ~/.config/nvim: nvim
+    ~/.config/kitty: kitty
 
