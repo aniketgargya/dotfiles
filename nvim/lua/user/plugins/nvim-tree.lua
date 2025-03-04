@@ -39,7 +39,7 @@ return {
     },
     keys = {
         { "<leader>ee", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file explorer" } },
-        { "<leader>ef", "<cmd>NvimTreeFocus<CR>", { desc = "Focus on file explorer" } },
+        { "<leader>ef", "<cmd>NvimTreeFindFile<CR>", { desc = "Find file in file explorer" } },
         { "<leader>ec", "<cmd>NvimTreeCollapse<CR>", { desc = "Collapse file explorer" } },
         { "<leader>er", "<cmd>NvimTreeRefresh<CR>", { desc = "Refresh file explorer" } },
     },
