@@ -1,3 +1,10 @@
 find ~/.ssh/ -type f -exec grep -l "PRIVATE" {} \; | xargs ssh-add &> /dev/null
 set -o vi
 
+alias git-branch-describe='for line in $(git branch); do
+    description=$(git config branch.$line.description)
+    if [ -n "$description" ]; then
+        echo "$line     $description"
+    fi
+done'
+
