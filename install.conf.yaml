@@ -3,6 +3,7 @@
 
 - link:
     ~/.tmux.conf: tmux.conf
+    ~/.tmux: tmux
     ~/.vimrc: vimrc
     ~/.extrarc: extrarc
     ~/.config/nvim: nvim
