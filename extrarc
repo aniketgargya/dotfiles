@@ -1,10 +1,23 @@
 find ~/.ssh/ -type f -exec grep -l "PRIVATE" {} \; | xargs ssh-add &> /dev/null
 set -o vi
 
-alias git-branch-describe='for line in $(git branch); do
-    description=$(git config branch.$line.description)
-    if [ -n "$description" ]; then
-        echo "$line     $description"
+git config --global alias.branches '!f() {
+    current=$(git symbolic-ref --short HEAD);
+    for branch in $(git for-each-ref --format="%(refname:short)" refs/heads/); do
+        desc=$(git config --get branch."$branch".description);
+    if [ "$branch" = "$current" ]; then
+        if [ -n "$desc" ]; then
+            printf "\033[0;32m* %s\033[0m - %s\n" "$branch" "$desc";
+        else
+            printf "\033[0;32m* %s\033[0m\n" "$branch";
     fi
-done'
+    else
+        if [ -n "$desc" ]; then
+            printf "  %s - %s\n" "$branch" "$desc";
+        else
+            printf "  %s\n" "$branch";
+    fi
+        fi
+        done
+}; f'
 
