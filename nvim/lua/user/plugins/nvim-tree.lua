@@ -6,8 +6,11 @@ return {
     end,
     opts = {
         view = {
-            width = 35,
+            width = {
+                min = 35,
+            },
             relativenumber = true,
+            adaptive_size = true,
         },
         renderer = {
             indent_markers = {
